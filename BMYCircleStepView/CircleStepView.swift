@@ -9,75 +9,77 @@
 import UIKit
 
 class CircleStepView: UIView {
-
-    var circleViews: Array<CircleView>
+    
+    private var _circleViews: Array<CircleView>
     var font: UIFont?
     var selectedColor: UIColor? = UIColor.lightGrayColor()
     var unselectedColor: UIColor? = UIColor.whiteColor()
     var borderThickness: CGFloat = 0.0
     
     var numberOfSteps: Int {
-        set(newValue) {
-            self.circleViews.removeAll(keepCapacity: 0)
-            
-            for subview in self.subviews {
+        set {
+            _circleViews.removeAll(keepCapacity: 0)
+            for subview in subviews {
                 subview.removeFromSuperview()
             }
             for i in 0..<newValue {
                 let cv = CircleView(frame: CGRectZero)
                 cv.value = String(i+1)
-                cv.font = self.font
-                cv.selectedColor = self.selectedColor
-                cv.unselectedColor = self.unselectedColor
-                cv.borderThickness = self.borderThickness
+                if let fnt = font {
+                    cv.font = fnt
+                }
+                cv.selectedColor = selectedColor
+                cv.unselectedColor = unselectedColor
+                cv.borderThickness = borderThickness
                 cv.backgroundColor = UIColor.clearColor()
-                self.circleViews.append(cv)
-                self.addSubview(cv)
+                _circleViews.append(cv)
+                addSubview(cv)
             }
-            self.setNeedsDisplay()
+            setNeedsDisplay()
         }
         get {
-            return self.subviews.count
+            return subviews.count
         }
     }
     var currentStep: Int = 0 {
-        willSet(newValue) {
-            (self.circleViews[self.currentStep] as CircleView).selected = false
+        willSet {
+            _circleViews[currentStep].selected = false
         }
         didSet {
-            (self.circleViews[self.currentStep] as CircleView).selected = true
-            self.setNeedsDisplay()
+            _circleViews[currentStep].selected = true
+            setNeedsDisplay()
         }
     }
     
     required init(coder aDecoder: NSCoder) {
-        self.circleViews = Array<CircleView>()
+        _circleViews = Array<CircleView>()
         super.init(coder: aDecoder)
     }
     
     override func layoutSubviews() {
         super.layoutSubviews()
-        var width = CGRectGetWidth(self.bounds)
-        var height = CGRectGetHeight(self.bounds)
-        var numberOfCircleViews = CGFloat(self.circleViews.count)
+        var width = CGRectGetWidth(bounds)
+        var height = CGRectGetHeight(bounds)
+        var numberOfCircleViews = CGFloat(_circleViews.count)
     
         if (numberOfCircleViews > 1) {
             var unusedSpace = width - (height * numberOfCircleViews)
-            width += (unusedSpace / (numberOfCircleViews - 1));
-            for i in 0..<Int(numberOfCircleViews) {
-                var circleView = self.circleViews[i]
-                circleView.frame = CGRectMake((width / numberOfCircleViews) * CGFloat(i),
-                0.0,
-                height,
-                height);
+            width += (unusedSpace / (numberOfCircleViews - 1))
+            for (i, circleView) in enumerate(_circleViews) {
+                circleView.frame = CGRect(
+                    x: (width / numberOfCircleViews) * CGFloat(i),
+                    y: 0.0,
+                    width: height,
+                    height: height
+                )
             }
         }
         else if (numberOfCircleViews == 1){
-            var circleView = self.circleViews.first as CircleView?;
+            var circleView = _circleViews.first as CircleView?
             circleView!.frame = CGRectMake((width / 2) - (height / 2),
                 0.0,
                 height,
-                height);
+                height)
         }
     }
 }

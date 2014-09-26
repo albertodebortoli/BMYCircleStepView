@@ -10,21 +10,21 @@ import UIKit
 
 class CircleView: UIView {
     
-    let valueLabel: UILabel = UILabel(frame: CGRectZero)
+    private let valueLabel: UILabel = UILabel(frame: CGRectZero)
     var value: String? {
-        set(newValue) {
-            self.valueLabel.text = newValue
+        set {
+            valueLabel.text = newValue
         }
         get {
-            return self.valueLabel.text
+            return valueLabel.text
         }
     }
-    var font: UIFont? {
-        set(newValue) {
-            self.valueLabel.font = newValue!
+    var font: UIFont {
+        set {
+            valueLabel.font = newValue
         }
         get {
-            return self.valueLabel.font
+            return valueLabel.font
         }
     }
     var selectedColor: UIColor? = UIColor.lightGrayColor()
@@ -32,22 +32,19 @@ class CircleView: UIView {
     var borderThickness: CGFloat = 0.0
     var selected: Bool = false
     
-    required init(coder aDecoder: NSCoder)
-    {
-        self.valueLabel.textAlignment = .Center;
+    required init(coder aDecoder: NSCoder) {
+        valueLabel.textAlignment = .Center
         super.init(coder: aDecoder)
-        self.addSubview(self.valueLabel)
+        addSubview(valueLabel)
     }
     
-    override init(frame: CGRect)
-    {
-        self.valueLabel.textAlignment = .Center;
+    override init(frame: CGRect) {
+        valueLabel.textAlignment = .Center
         super.init(frame: frame)
-        self.addSubview(self.valueLabel)
+        addSubview(valueLabel)
     }
     
-    override func drawRect(rect: CGRect)
-    {
+    override func drawRect(rect: CGRect) {
         let width = CGRectGetWidth(rect)
         let height = CGRectGetHeight(rect)
         let minSize = min(width, height)
@@ -59,25 +56,24 @@ class CircleView: UIView {
         
         let ctx: CGContextRef = UIGraphicsGetCurrentContext()
         CGContextAddEllipseInRect(ctx, squareRect)
-        CGContextSetFillColorWithColor(ctx, self.selectedColor?.CGColor)
+        CGContextSetFillColorWithColor(ctx, selectedColor?.CGColor)
         CGContextFillPath(ctx)
         
-        if (self.selected) {
-            let innerRect = CGRectInset(squareRect, self.borderThickness, self.borderThickness)
+        if (selected) {
+            let innerRect = CGRectInset(squareRect, borderThickness, borderThickness)
             CGContextAddEllipseInRect(ctx, innerRect)
-            CGContextSetFillColorWithColor(ctx, self.unselectedColor!.CGColor)
+            CGContextSetFillColorWithColor(ctx, unselectedColor!.CGColor)
             CGContextFillPath(ctx)
-            self.valueLabel.textColor = self.selectedColor!
+            valueLabel.textColor = selectedColor!
         }
         else {
-            self.valueLabel.textColor = self.unselectedColor!
+            valueLabel.textColor = unselectedColor!
         }
     }
     
-    override func layoutSubviews()
-    {
+    override func layoutSubviews() {
         super.layoutSubviews()
-        self.valueLabel.frame = self.bounds
-        self.setNeedsDisplay()
+        valueLabel.frame = bounds
+        setNeedsDisplay()
     }
 }
