@@ -1,0 +1,472 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F04843F219D2D04E00FCBECC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F04843F119D2D04E00FCBECC /* main.m */; };
+		F04843F519D2D04E00FCBECC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F04843F419D2D04E00FCBECC /* AppDelegate.m */; };
+		F04843F819D2D04E00FCBECC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F04843F719D2D04E00FCBECC /* ViewController.m */; };
+		F04843FB19D2D04E00FCBECC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F04843F919D2D04E00FCBECC /* Main.storyboard */; };
+		F04843FD19D2D04E00FCBECC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F04843FC19D2D04E00FCBECC /* Images.xcassets */; };
+		F048440019D2D04E00FCBECC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F04843FE19D2D04E00FCBECC /* LaunchScreen.xib */; };
+		F048440C19D2D04E00FCBECC /* BMYCircleStepViewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F048440B19D2D04E00FCBECC /* BMYCircleStepViewDemoTests.m */; };
+		F048441819D2D07800FCBECC /* BMYCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = F048441719D2D07800FCBECC /* BMYCircleView.m */; };
+		F048441B19D2DB6100FCBECC /* BMYCircleStepView.m in Sources */ = {isa = PBXBuildFile; fileRef = F048441A19D2DB6100FCBECC /* BMYCircleStepView.m */; };
+		F048442119D2FD7700FCBECC /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F048442019D2FD7700FCBECC /* CircleView.swift */; };
+		F048442319D3130600FCBECC /* CircleStepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F048442219D3130600FCBECC /* CircleStepView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F048440619D2D04E00FCBECC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F04843E419D2D04E00FCBECC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F04843EB19D2D04E00FCBECC;
+			remoteInfo = BMYCircleStepViewDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F04843EC19D2D04E00FCBECC /* BMYCircleStepViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BMYCircleStepViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F04843F019D2D04E00FCBECC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F04843F119D2D04E00FCBECC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F04843F319D2D04E00FCBECC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F04843F419D2D04E00FCBECC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F04843F619D2D04E00FCBECC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F04843F719D2D04E00FCBECC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F04843FA19D2D04E00FCBECC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F04843FC19D2D04E00FCBECC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F04843FF19D2D04E00FCBECC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		F048440519D2D04E00FCBECC /* BMYCircleStepViewDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BMYCircleStepViewDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F048440A19D2D04E00FCBECC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F048440B19D2D04E00FCBECC /* BMYCircleStepViewDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BMYCircleStepViewDemoTests.m; sourceTree = "<group>"; };
+		F048441619D2D07800FCBECC /* BMYCircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMYCircleView.h; sourceTree = "<group>"; };
+		F048441719D2D07800FCBECC /* BMYCircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMYCircleView.m; sourceTree = "<group>"; };
+		F048441919D2DB6100FCBECC /* BMYCircleStepView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMYCircleStepView.h; sourceTree = "<group>"; };
+		F048441A19D2DB6100FCBECC /* BMYCircleStepView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMYCircleStepView.m; sourceTree = "<group>"; };
+		F048441C19D2FB6100FCBECC /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
+		F048441D19D2FB6100FCBECC /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		F048441E19D2FCE000FCBECC /* BMYCircleStepView.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = BMYCircleStepView.podspec; sourceTree = "<group>"; };
+		F048441F19D2FD7700FCBECC /* BMYCircleStepViewDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BMYCircleStepViewDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		F048442019D2FD7700FCBECC /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		F048442219D3130600FCBECC /* CircleStepView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleStepView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F04843E919D2D04E00FCBECC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F048440219D2D04E00FCBECC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F04843E319D2D04E00FCBECC = {
+			isa = PBXGroup;
+			children = (
+				F048441C19D2FB6100FCBECC /* LICENSE.md */,
+				F048441D19D2FB6100FCBECC /* README.md */,
+				F048441E19D2FCE000FCBECC /* BMYCircleStepView.podspec */,
+				F048441519D2D06400FCBECC /* BMYCircleStepView */,
+				F04843EE19D2D04E00FCBECC /* BMYCircleStepViewDemo */,
+				F048440819D2D04E00FCBECC /* BMYCircleStepViewDemoTests */,
+				F04843ED19D2D04E00FCBECC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F04843ED19D2D04E00FCBECC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F04843EC19D2D04E00FCBECC /* BMYCircleStepViewDemo.app */,
+				F048440519D2D04E00FCBECC /* BMYCircleStepViewDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F04843EE19D2D04E00FCBECC /* BMYCircleStepViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				F04843F319D2D04E00FCBECC /* AppDelegate.h */,
+				F04843F419D2D04E00FCBECC /* AppDelegate.m */,
+				F04843F619D2D04E00FCBECC /* ViewController.h */,
+				F04843F719D2D04E00FCBECC /* ViewController.m */,
+				F04843F919D2D04E00FCBECC /* Main.storyboard */,
+				F04843FC19D2D04E00FCBECC /* Images.xcassets */,
+				F04843FE19D2D04E00FCBECC /* LaunchScreen.xib */,
+				F04843EF19D2D04E00FCBECC /* Supporting Files */,
+			);
+			path = BMYCircleStepViewDemo;
+			sourceTree = "<group>";
+		};
+		F04843EF19D2D04E00FCBECC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F04843F019D2D04E00FCBECC /* Info.plist */,
+				F04843F119D2D04E00FCBECC /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F048440819D2D04E00FCBECC /* BMYCircleStepViewDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				F048440B19D2D04E00FCBECC /* BMYCircleStepViewDemoTests.m */,
+				F048440919D2D04E00FCBECC /* Supporting Files */,
+			);
+			path = BMYCircleStepViewDemoTests;
+			sourceTree = "<group>";
+		};
+		F048440919D2D04E00FCBECC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F048440A19D2D04E00FCBECC /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F048441519D2D06400FCBECC /* BMYCircleStepView */ = {
+			isa = PBXGroup;
+			children = (
+				F048441619D2D07800FCBECC /* BMYCircleView.h */,
+				F048441719D2D07800FCBECC /* BMYCircleView.m */,
+				F048442019D2FD7700FCBECC /* CircleView.swift */,
+				F048441919D2DB6100FCBECC /* BMYCircleStepView.h */,
+				F048441A19D2DB6100FCBECC /* BMYCircleStepView.m */,
+				F048442219D3130600FCBECC /* CircleStepView.swift */,
+				F048441F19D2FD7700FCBECC /* BMYCircleStepViewDemo-Bridging-Header.h */,
+			);
+			path = BMYCircleStepView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F04843EB19D2D04E00FCBECC /* BMYCircleStepViewDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F048440F19D2D04E00FCBECC /* Build configuration list for PBXNativeTarget "BMYCircleStepViewDemo" */;
+			buildPhases = (
+				F04843E819D2D04E00FCBECC /* Sources */,
+				F04843E919D2D04E00FCBECC /* Frameworks */,
+				F04843EA19D2D04E00FCBECC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BMYCircleStepViewDemo;
+			productName = BMYCircleStepViewDemo;
+			productReference = F04843EC19D2D04E00FCBECC /* BMYCircleStepViewDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F048440419D2D04E00FCBECC /* BMYCircleStepViewDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F048441219D2D04E00FCBECC /* Build configuration list for PBXNativeTarget "BMYCircleStepViewDemoTests" */;
+			buildPhases = (
+				F048440119D2D04E00FCBECC /* Sources */,
+				F048440219D2D04E00FCBECC /* Frameworks */,
+				F048440319D2D04E00FCBECC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F048440719D2D04E00FCBECC /* PBXTargetDependency */,
+			);
+			name = BMYCircleStepViewDemoTests;
+			productName = BMYCircleStepViewDemoTests;
+			productReference = F048440519D2D04E00FCBECC /* BMYCircleStepViewDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F04843E419D2D04E00FCBECC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = Beamly;
+				TargetAttributes = {
+					F04843EB19D2D04E00FCBECC = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					F048440419D2D04E00FCBECC = {
+						CreatedOnToolsVersion = 6.0.1;
+						TestTargetID = F04843EB19D2D04E00FCBECC;
+					};
+				};
+			};
+			buildConfigurationList = F04843E719D2D04E00FCBECC /* Build configuration list for PBXProject "BMYCircleStepViewDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F04843E319D2D04E00FCBECC;
+			productRefGroup = F04843ED19D2D04E00FCBECC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F04843EB19D2D04E00FCBECC /* BMYCircleStepViewDemo */,
+				F048440419D2D04E00FCBECC /* BMYCircleStepViewDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F04843EA19D2D04E00FCBECC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F04843FB19D2D04E00FCBECC /* Main.storyboard in Resources */,
+				F048440019D2D04E00FCBECC /* LaunchScreen.xib in Resources */,
+				F04843FD19D2D04E00FCBECC /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F048440319D2D04E00FCBECC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F04843E819D2D04E00FCBECC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F048442319D3130600FCBECC /* CircleStepView.swift in Sources */,
+				F048442119D2FD7700FCBECC /* CircleView.swift in Sources */,
+				F04843F819D2D04E00FCBECC /* ViewController.m in Sources */,
+				F04843F519D2D04E00FCBECC /* AppDelegate.m in Sources */,
+				F04843F219D2D04E00FCBECC /* main.m in Sources */,
+				F048441819D2D07800FCBECC /* BMYCircleView.m in Sources */,
+				F048441B19D2DB6100FCBECC /* BMYCircleStepView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F048440119D2D04E00FCBECC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F048440C19D2D04E00FCBECC /* BMYCircleStepViewDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F048440719D2D04E00FCBECC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F04843EB19D2D04E00FCBECC /* BMYCircleStepViewDemo */;
+			targetProxy = F048440619D2D04E00FCBECC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F04843F919D2D04E00FCBECC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F04843FA19D2D04E00FCBECC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F04843FE19D2D04E00FCBECC /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F04843FF19D2D04E00FCBECC /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F048440D19D2D04E00FCBECC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F048440E19D2D04E00FCBECC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F048441019D2D04E00FCBECC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = BMYCircleStepViewDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BMYCircleStepView/BMYCircleStepViewDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F048441119D2D04E00FCBECC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = BMYCircleStepViewDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BMYCircleStepView/BMYCircleStepViewDemo-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		F048441319D2D04E00FCBECC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BMYCircleStepViewDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BMYCircleStepViewDemo.app/BMYCircleStepViewDemo";
+			};
+			name = Debug;
+		};
+		F048441419D2D04E00FCBECC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BMYCircleStepViewDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BMYCircleStepViewDemo.app/BMYCircleStepViewDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F04843E719D2D04E00FCBECC /* Build configuration list for PBXProject "BMYCircleStepViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F048440D19D2D04E00FCBECC /* Debug */,
+				F048440E19D2D04E00FCBECC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F048440F19D2D04E00FCBECC /* Build configuration list for PBXNativeTarget "BMYCircleStepViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F048441019D2D04E00FCBECC /* Debug */,
+				F048441119D2D04E00FCBECC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F048441219D2D04E00FCBECC /* Build configuration list for PBXNativeTarget "BMYCircleStepViewDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F048441319D2D04E00FCBECC /* Debug */,
+				F048441419D2D04E00FCBECC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F04843E419D2D04E00FCBECC /* Project object */;
+}

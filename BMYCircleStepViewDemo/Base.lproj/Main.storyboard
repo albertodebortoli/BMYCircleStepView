@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment defaultVersion="1792" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i55-Mn-fF4" userLabel="CircleView1" customClass="CircleView" customModule="BMYCircleStepViewDemo" customModuleProvider="target">
+                                <rect key="frame" x="16" y="28" width="130" height="101"/>
+                                <color key="backgroundColor" red="0.9800455806998235" green="1" blue="0.52229259940055406" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="101" id="OTT-y4-mb5"/>
+                                    <constraint firstAttribute="width" constant="130" id="Qj9-y5-vbl"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LkU-CH-7o0" userLabel="CircleView2" customClass="CircleView" customModule="BMYCircleStepViewDemo" customModuleProvider="target">
+                                <rect key="frame" x="168" y="28" width="60" height="73"/>
+                                <color key="backgroundColor" red="0.98004558070000003" green="1" blue="0.52229259939999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="73" id="50P-bn-uDE"/>
+                                    <constraint firstAttribute="width" constant="60" id="peI-8u-ef5"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c6Y-kt-FC8" userLabel="CircleView3" customClass="BMYCircleView">
+                                <rect key="frame" x="250" y="28" width="50" height="58"/>
+                                <color key="backgroundColor" red="0.98004558070000003" green="1" blue="0.52229259939999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="6EK-Oa-rkG"/>
+                                    <constraint firstAttribute="width" constant="50" id="sgJ-ih-IiJ"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="egY-UA-Nzg" customClass="CircleStepView" customModule="BMYCircleStepViewDemo" customModuleProvider="target">
+                                <rect key="frame" x="16" y="157" width="568" height="69"/>
+                                <color key="backgroundColor" red="0.67526711089950875" green="1" blue="0.69313107609403679" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MeD-Bz-LKR" customClass="CircleStepView" customModule="BMYCircleStepViewDemo" customModuleProvider="target">
+                                <rect key="frame" x="16" y="258" width="568" height="62"/>
+                                <color key="backgroundColor" red="0.67526711090000002" green="1" blue="0.69313107610000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y3V-MO-2Yn" customClass="BMYCircleStepView">
+                                <rect key="frame" x="16" y="436" width="568" height="37"/>
+                                <color key="backgroundColor" red="0.67526711090000002" green="1" blue="0.69313107610000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="J7A-0a-FxS"/>
+                                    <constraint firstAttribute="width" constant="568" id="Ucr-4G-RT1"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="do8-ym-L10" customClass="BMYCircleStepView">
+                                <rect key="frame" x="16" y="353" width="568" height="51"/>
+                                <color key="backgroundColor" red="0.67526711090000002" green="1" blue="0.69313107610000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l0k-ll-dUg" userLabel="CircleView4" customClass="BMYCircleView">
+                                <rect key="frame" x="321" y="28" width="72" height="41"/>
+                                <color key="backgroundColor" red="0.98004558070000003" green="1" blue="0.52229259939999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="6qN-kf-we4"/>
+                                    <constraint firstAttribute="width" constant="72" id="kBE-wE-2SW"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="c6Y-kt-FC8" firstAttribute="top" secondItem="l0k-ll-dUg" secondAttribute="top" id="1dU-8a-tci"/>
+                            <constraint firstItem="Y3V-MO-2Yn" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="436" id="29I-e4-b9X"/>
+                            <constraint firstItem="LkU-CH-7o0" firstAttribute="leading" secondItem="i55-Mn-fF4" secondAttribute="trailing" constant="22" id="2v0-Td-A0C"/>
+                            <constraint firstItem="MeD-Bz-LKR" firstAttribute="trailing" secondItem="do8-ym-L10" secondAttribute="trailing" id="47L-MI-g4V"/>
+                            <constraint firstItem="LkU-CH-7o0" firstAttribute="top" secondItem="i55-Mn-fF4" secondAttribute="top" id="4Ih-J9-4TR"/>
+                            <constraint firstItem="Y3V-MO-2Yn" firstAttribute="top" secondItem="do8-ym-L10" secondAttribute="bottom" constant="32" id="827-cM-W9j"/>
+                            <constraint firstItem="l0k-ll-dUg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="321" id="E27-dd-kZY"/>
+                            <constraint firstAttribute="trailing" secondItem="l0k-ll-dUg" secondAttribute="trailing" constant="207" id="I0y-Ue-IBY"/>
+                            <constraint firstItem="LkU-CH-7o0" firstAttribute="top" secondItem="c6Y-kt-FC8" secondAttribute="top" id="K0l-Gv-7XK"/>
+                            <constraint firstItem="do8-ym-L10" firstAttribute="leading" secondItem="Y3V-MO-2Yn" secondAttribute="leading" id="M5l-Va-qtV"/>
+                            <constraint firstItem="egY-UA-Nzg" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="157" id="Psb-Kd-XUR"/>
+                            <constraint firstItem="do8-ym-L10" firstAttribute="top" secondItem="MeD-Bz-LKR" secondAttribute="bottom" constant="33" id="Rcg-yS-qA1"/>
+                            <constraint firstItem="i55-Mn-fF4" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="Ueb-rL-wwn"/>
+                            <constraint firstItem="MeD-Bz-LKR" firstAttribute="top" secondItem="egY-UA-Nzg" secondAttribute="bottom" constant="32" id="VQ4-Ec-la1"/>
+                            <constraint firstItem="egY-UA-Nzg" firstAttribute="leading" secondItem="MeD-Bz-LKR" secondAttribute="leading" id="W3K-i2-Da4"/>
+                            <constraint firstItem="MeD-Bz-LKR" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="258" id="WKR-HD-ox4"/>
+                            <constraint firstItem="egY-UA-Nzg" firstAttribute="top" secondItem="LkU-CH-7o0" secondAttribute="bottom" constant="56" id="Wcy-uw-dfr"/>
+                            <constraint firstItem="do8-ym-L10" firstAttribute="leading" secondItem="MeD-Bz-LKR" secondAttribute="leading" id="YM2-IR-nB4"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Y3V-MO-2Yn" secondAttribute="bottom" constant="81" id="bVt-RT-7Ph"/>
+                            <constraint firstItem="l0k-ll-dUg" firstAttribute="leading" secondItem="c6Y-kt-FC8" secondAttribute="trailing" constant="21" id="bZ0-oh-jVF"/>
+                            <constraint firstItem="egY-UA-Nzg" firstAttribute="top" secondItem="l0k-ll-dUg" secondAttribute="bottom" constant="88" id="cM8-rp-hfa"/>
+                            <constraint firstItem="LkU-CH-7o0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="168" id="fbc-kK-SMi"/>
+                            <constraint firstItem="i55-Mn-fF4" firstAttribute="leading" secondItem="egY-UA-Nzg" secondAttribute="leading" id="hVe-be-dp3"/>
+                            <constraint firstItem="do8-ym-L10" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="i4G-wi-YD7"/>
+                            <constraint firstItem="c6Y-kt-FC8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="250" id="jrv-Sp-E24"/>
+                            <constraint firstItem="i55-Mn-fF4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="oxg-KE-h5x"/>
+                            <constraint firstItem="do8-ym-L10" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="353" id="pbk-UE-J3t"/>
+                            <constraint firstItem="MeD-Bz-LKR" firstAttribute="trailing" secondItem="egY-UA-Nzg" secondAttribute="trailing" id="qhd-6L-eSF"/>
+                            <constraint firstItem="egY-UA-Nzg" firstAttribute="top" secondItem="i55-Mn-fF4" secondAttribute="bottom" constant="28" id="scP-cj-qgp"/>
+                            <constraint firstItem="egY-UA-Nzg" firstAttribute="top" secondItem="c6Y-kt-FC8" secondAttribute="bottom" constant="71" id="tWu-D8-7xd"/>
+                            <constraint firstItem="c6Y-kt-FC8" firstAttribute="leading" secondItem="LkU-CH-7o0" secondAttribute="trailing" constant="22" id="xiQ-CX-b3C"/>
+                            <constraint firstItem="Y3V-MO-2Yn" firstAttribute="trailing" secondItem="do8-ym-L10" secondAttribute="trailing" id="xz0-G3-Yjv"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="circleStepView1" destination="egY-UA-Nzg" id="5dP-Td-G9w"/>
+                        <outlet property="circleStepView2" destination="MeD-Bz-LKR" id="kT2-fh-XvY"/>
+                        <outlet property="circleStepView3" destination="do8-ym-L10" id="Cyh-pd-C6D"/>
+                        <outlet property="circleStepView4" destination="Y3V-MO-2Yn" id="8Bz-5T-Xi0"/>
+                        <outlet property="circleView1" destination="i55-Mn-fF4" id="qb4-RE-yHU"/>
+                        <outlet property="circleView2" destination="LkU-CH-7o0" id="agK-c3-26D"/>
+                        <outlet property="circleView3" destination="c6Y-kt-FC8" id="arh-nz-lqu"/>
+                        <outlet property="circleView4" destination="l0k-ll-dUg" id="Ss3-RF-OMu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
