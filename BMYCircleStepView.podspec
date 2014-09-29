@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
   s.name     = 'BMYCircleStepView'
   s.version  = '1.0.0'
   s.platform = :ios, '5.0'
-  s.summary  = 'Simple view showing the steps of a flow as used in the Beamly iOS app.'
+  s.summary  = 'Simple view rendering a number of selectable circles.'
   s.description = 'Simple view showing the steps of a flow as used in the Beamly iOS app.'
   s.homepage = 'https://github.com/beamly/BMYCircleStepView'
   s.author   = { 'Alberto De Bortoli' => 'alberto@beamly.com', 'Stefan Dougan-Hyde' => 'stefan@beamly.com' }
