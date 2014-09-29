@@ -59,7 +59,7 @@ class CircleView: UIView {
         CGContextSetFillColorWithColor(ctx, selectedColor?.CGColor)
         CGContextFillPath(ctx)
         
-        if (selected) {
+        if (!selected) {
             let innerRect = CGRectInset(squareRect, borderThickness, borderThickness)
             CGContextAddEllipseInRect(ctx, innerRect)
             CGContextSetFillColorWithColor(ctx, unselectedColor!.CGColor)
