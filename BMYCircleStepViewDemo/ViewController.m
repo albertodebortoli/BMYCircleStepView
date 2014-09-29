@@ -67,13 +67,15 @@
     self.circleStepView1.borderThickness = 2.0f;
     self.circleStepView1.numberOfSteps = 3;
     self.circleStepView1.currentStep = 1;
+    self.circleStepView1.fillSteps = NO;
     
     self.circleStepView2.font = [UIFont fontWithName:@"HelveticaNeue-Bold" size:24.0];
     self.circleStepView2.selectedColor = [UIColor darkGrayColor];
     self.circleStepView2.unselectedColor = [UIColor lightGrayColor];
     self.circleStepView2.borderThickness = 5.0f;
     self.circleStepView2.numberOfSteps = 3;
-    self.circleStepView2.currentStep = 2;
+    self.circleStepView2.currentStep = 1;
+    self.circleStepView2.fillSteps = YES;
     
     self.circleStepView3.font = [UIFont fontWithName:@"HelveticaNeue-Bold" size:24.0];
     self.circleStepView3.selectedColor = [UIColor darkGrayColor];
@@ -81,6 +83,7 @@
     self.circleStepView3.borderThickness = 4.0f;
     self.circleStepView3.numberOfSteps = 4;
     self.circleStepView3.currentStep = 2;
+    self.circleStepView3.fillSteps = NO;
     
     self.circleStepView4.font = [UIFont fontWithName:@"HelveticaNeue-Bold" size:24.0];
     self.circleStepView4.selectedColor = [UIColor darkGrayColor];
@@ -88,6 +91,7 @@
     self.circleStepView4.borderThickness = 2.0f;
     self.circleStepView4.numberOfSteps = 6;
     self.circleStepView4.currentStep = 2;
+    self.circleStepView4.fillSteps = YES;
 }
 
 @end

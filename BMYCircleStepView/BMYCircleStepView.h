@@ -20,4 +20,7 @@
 @property (nonatomic, assign) NSInteger numberOfSteps;
 @property (nonatomic, assign) NSInteger currentStep;
 
+// fills the steps up to the current one
+@property (nonatomic, assign) BOOL fillSteps;
+
 @end

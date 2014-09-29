@@ -15,7 +15,6 @@ class CircleStepView: UIView {
     var selectedColor: UIColor? = UIColor.lightGrayColor()
     var unselectedColor: UIColor? = UIColor.whiteColor()
     var borderThickness: CGFloat = 0.0
-    
     var numberOfSteps: Int {
         set {
             _circleViews.removeAll(keepCapacity: 0)
@@ -42,11 +41,12 @@ class CircleStepView: UIView {
         }
     }
     var currentStep: Int = 0 {
-        willSet {
-            _circleViews[currentStep].selected = false
-        }
         didSet {
-            _circleViews[currentStep].selected = true
+            setNeedsDisplay()
+        }
+    }
+    var fillSteps: Bool = false {
+        didSet {
             setNeedsDisplay()
         }
     }
@@ -72,6 +72,8 @@ class CircleStepView: UIView {
                     width: height,
                     height: height
                 )
+                circleView.selected = ((i <= currentStep) && fillSteps) ||
+                    ((i == currentStep) && !fillSteps)
             }
         }
         else if (numberOfCircleViews == 1){
@@ -80,6 +82,7 @@ class CircleStepView: UIView {
                 0.0,
                 height,
                 height)
+            circleView!.selected = (currentStep == 0)
         }
     }
 }

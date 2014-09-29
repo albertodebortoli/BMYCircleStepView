@@ -47,12 +47,13 @@
     [self setNeedsDisplay];
 }
 
+- (void)setFillSteps:(BOOL)fillSteps {
+    _fillSteps = fillSteps;
+    [self setNeedsDisplay];
+}
+
 - (void)setCurrentStep:(NSInteger)currentStep {
-    BMYCircleView *circleView = self.circleViews[_currentStep];
-    circleView.selected = NO;
     _currentStep = currentStep;
-    circleView = self.circleViews[_currentStep];
-    circleView.selected = YES;
     [self setNeedsDisplay];
 }
 
@@ -71,6 +72,8 @@
                                           0.0f,
                                           height,
                                           height);
+            circleView.selected = ((i <= self.currentStep) && self.fillSteps) ||
+            ((i == self.currentStep) && !self.fillSteps);
         }
     }
     else if (numberOfCircleViews == 1){
@@ -79,6 +82,7 @@
                                       0.0f,
                                       height,
                                       height);
+        circleView.selected = (self.currentStep == 0);
     }
 }
 
